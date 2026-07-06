@@ -1,0 +1,10 @@
+<rule id="100002" level="13">
+  <if_group>sysmon_event1</if_group>
+  <field name="win.eventdata.parentImage" type="pcre2">(?i)(cmd\.exe|wscript\.exe|cscript\.exe|mshta\.exe|explorer\.exe|wmiprvse\.exe|winword\.exe|excel\.exe)</field>
+  <field name="win.eventdata.commandLine" type="pcre2">(?i)encodedcommand</field>
+  <options>no_full_log</options>
+  <description>Suspicious base64-encoded PowerShell command launched by a non-PowerShell parent process</description>
+  <mitre>
+    <id>T1059.001</id>
+  </mitre>
+</rule>
