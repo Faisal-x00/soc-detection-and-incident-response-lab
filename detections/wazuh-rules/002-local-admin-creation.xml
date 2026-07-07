@@ -1,0 +1,8 @@
+<rule id="100010" level="13" timeframe="120">
+  <if_matched_sid>60109</if_matched_sid>
+  <description>New local account created and escalated to Administrators group shortly after, possible persistence attempt</description>
+  <mitre>
+    <id>T1136.001</id>
+    <id>T1098</id>
+  </mitre>
+</rule>
