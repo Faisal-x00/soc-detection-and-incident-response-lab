@@ -36,7 +36,7 @@ accessed at any point.
 - **Archives enabled**: full event visibility (matched + unmatched) via 
   `wazuh-archives-*`, not just alerted events
 
-See `architecture/data-flow.md` for full details.
+See [architecture/data-flow.md](architecture/data-flow.md) for full details.
 
 ## Scenarios
 
