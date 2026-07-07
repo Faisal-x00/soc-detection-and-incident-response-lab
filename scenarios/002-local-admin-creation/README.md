@@ -81,8 +81,9 @@ differing field names between the two underlying Windows event types. This
 is documented as a known limitation rather than treated as fully solved.
 
 ## Incident Report Summary
-Case ID 002. Severity Critical. Status Detected and Contained (Lab). 
-Analyst Your Name. Date July 2026.
+**Case ID:** 002. **Severity:** Critical. **Status:** Detected and Contained (Lab). 
+**Analyst:** Faisal Alomar **Date:** July 2026.
+
 
 A new local account was created and escalated to the Administrators group 
 within under 100 milliseconds, a pattern consistent with automated 

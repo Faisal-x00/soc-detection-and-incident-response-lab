@@ -1,0 +1,8 @@
+<rule id="100020" level="12">
+  <if_sid>61138</if_sid>
+  <field name="win.eventdata.imagePath" type="pcre2">(?i)(cmd\.exe|powershell\.exe|rundll32\.exe|mshta\.exe|wscript\.exe|cscript\.exe)</field>
+  <description>Windows service created with suspicious interpreter or LOLBin as its executable</description>
+  <mitre>
+    <id>T1543.003</id>
+  </mitre>
+</rule>
