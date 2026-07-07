@@ -8,8 +8,7 @@ An end-to-end, self-hosted SOC lab simulating realistic attacker behaviors,
 detecting them with a mix of Wazuh's built-in ruleset and custom-authored 
 detection rules mapped to MITRE ATT&CK, and following through with full 
 investigation, timeline reconstruction, false positive analysis, and 
-incident reporting — the complete SOC analyst workflow, not just alert 
-generation.
+incident reporting.
 
 Rather than writing detection rules from scratch in isolation, each scenario 
 in this lab follows a **gap analysis** methodology: simulate the behavior, 
