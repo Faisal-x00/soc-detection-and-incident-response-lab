@@ -5,7 +5,7 @@
 
 ## Overview
 An end-to-end, self-hosted SOC lab simulating realistic attacker behaviors, 
-detecting them with a mix of Wazuh's built-in ruleset and custom-authored 
+detecting them with a mix of Wazuh's built-in ruleset and custom
 detection rules mapped to MITRE ATT&CK, and following through with full 
 investigation, timeline reconstruction, false positive analysis, and 
 incident reporting.
