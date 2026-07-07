@@ -52,10 +52,10 @@ See [architecture/data-flow.md](architecture/data-flow.md) for full details.
   Wazuh's default ruleset, not just written rules for previously-uncovered behavior
 - Discovered a reproducible Wazuh rule-correlation limitation (same-chain 
   rules competing rather than coexisting), observed independently in two 
-  separate scenarios — see `lessons-learned.md`
+  separate scenarios see `lessons-learned.md`
 - Investigated and closed out a real, organically-occurring false positive 
   (legitimate Disk Cleanup activity) using the same triage process applied 
-  to simulated scenarios — see `threat-hunting/windows-hunting-notes.md`
+  to simulated scenarios see `threat-hunting/windows-hunting-notes.md`
 
 ## Possible Future Enhancements
 - Sigma rule equivalents for each custom detection
