@@ -1,0 +1,8 @@
+<rule id="100030" level="13">
+  <if_sid>92203</if_sid>
+  <field name="win.eventdata.targetFilename" type="pcre2">(?i)\\Start Menu\\Programs\\Startup\\</field>
+  <description>File created in Startup folder, possible persistence mechanism, attempted escalation over generic AppData rule 92204</description>
+  <mitre>
+    <id>T1547.001</id>
+  </mitre>
+</rule>
