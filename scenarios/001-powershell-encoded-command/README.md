@@ -38,23 +38,11 @@ even with the exact same suspicious command line present.
 
 ## Custom Rule 100002
 Extends detection to flag base64-encoded PowerShell execution launched 
-from any of several known non-PowerShell parent processes, closing the gap 
-without duplicating 92057's existing coverage:
+from any of several known non-PowerShell parent processes (cmd.exe, 
+wscript.exe, cscript.exe, mshta.exe, explorer.exe, wmiprvse.exe, winword.exe, 
+excel.exe), closing the gap without duplicating 92057's existing coverage.
 
-```xml
-<rule id="100002" level="13">
-  <if_group>sysmon_event1</if_group>
-  <field name="win.eventdata.parentImage" type="pcre2">(?i)(cmd\.exe|wscript\.exe|cscript\.exe|mshta\.exe|explorer\.exe|wmiprvse\.exe|winword\.exe|excel\.exe)</field>
-  <field name="win.eventdata.commandLine" type="pcre2">(?i)encodedcommand</field>
-  <options>no_full_log</options>
-  <description>Suspicious base64-encoded PowerShell command launched by a non-PowerShell parent process</description>
-  <mitre>
-    <id>T1059.001</id>
-  </mitre>
-</rule>
-```
-
-Full rule file: [`detections/wazuh-rules/001-powershell-encoded-command.xml`](../../detections/wazuh-rules/001-powershell-encoded-command.xml)
+Full rule: [`detections/wazuh-rules/001-powershell-encoded-command.xml`](../../detections/wazuh-rules/001-powershell-encoded-command.xml)
 
 ## Raw Log Evidence
 

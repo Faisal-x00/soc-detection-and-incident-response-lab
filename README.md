@@ -1,7 +1,7 @@
 # SOC Detection Engineering & Incident Response Lab
 
 ## Status
-🔧 Detection engineering complete — scenario documentation in progress.
+🔧 Complete.
 
 ## Overview
 An end-to-end, self-hosted SOC lab simulating realistic attacker behaviors, 
@@ -15,7 +15,7 @@ Rather than writing detection rules from scratch in isolation, each scenario
 in this lab follows a **gap analysis** methodology: simulate the behavior, 
 determine what Wazuh's existing ruleset already catches, identify the 
 specific blind spot in that coverage, then build a custom rule to close it. 
-In one case, existing coverage was already strong and no gap was found — 
+In one case, existing coverage was already strong and no gap was found 
 that finding is documented too, since knowing when *not* to build something 
 is as much a part of detection engineering as building it.
 
@@ -58,13 +58,7 @@ See `architecture/data-flow.md` for full details.
   (legitimate Disk Cleanup activity) using the same triage process applied 
   to simulated scenarios — see `threat-hunting/windows-hunting-notes.md`
 
-## Roadmap
-- [x] Sysmon deployment on Windows endpoint
-- [x] Core 5 scenarios (simulate → detect → investigate)
-- [x] Wazuh archives enabled for full-visibility threat hunting
-- [ ] Full per-scenario documentation (README, evidence, investigation, timeline, response)
-- [ ] Incident reports
-- [ ] Detection coverage matrix
-- [ ] Sigma rule equivalents (stretch)
-- [ ] Stretch: Velociraptor DFIR integration
-- [ ] Stretch: TheHive case management
+## Possible Future Enhancements
+- Sigma rule equivalents for each custom detection
+- Velociraptor integration for endpoint DFIR investigation
+- TheHive integration for formal case management
