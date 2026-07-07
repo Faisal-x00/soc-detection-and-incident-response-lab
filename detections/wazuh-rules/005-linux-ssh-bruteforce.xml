@@ -1,0 +1,8 @@
+<rule id="100040" level="11" frequency="5" timeframe="120">
+  <if_matched_sid>5710</if_matched_sid>
+  <same_source_ip />
+  <description>High-volume SSH brute force: 5+ failed login attempts from the same source IP within 2 minutes</description>
+  <mitre>
+    <id>T1110.001</id>
+  </mitre>
+</rule>

@@ -8,9 +8,9 @@ A new Windows service was created pointing directly at cmd.exe as its
 executable, mirroring how attackers often use a legitimate system binary 
 or LOLBin as the launch target for a persistence mechanism.
 
-\`\`\`
+```
 sc create SocLabTestSvc2 binPath= "C:\Windows\System32\cmd.exe /c echo SOC lab test service 2" start= demand
-\`\`\`
+```
 
 ## Why This Matters
 Creating a new Windows service is a common persistence and privilege 

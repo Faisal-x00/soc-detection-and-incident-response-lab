@@ -8,10 +8,10 @@ A new local user account was created on the Windows endpoint, then
 immediately added to the local Administrators group, mirroring a classic 
 persistence and privilege escalation pattern.
 
-\`\`\`
+```
 net user soc_lab_test2 P@ssw0rd123! /add
 net localgroup administrators soc_lab_test2 /add
-\`\`\`
+```
 
 ## Why This Matters
 Creating a new local admin account is a common persistence technique. If an 
